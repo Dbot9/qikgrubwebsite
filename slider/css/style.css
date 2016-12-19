@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* Homepage
+----------------------------------------------- */
+html {
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', arial, serif;
+	font-size: 11px;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	min-width: 1000px;
+	width: 100%;
+	color: #213442;
+	background-color: #E1E5E9;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.wrp-inr {
+	width: 990px;
+	margin: 0 auto;
+}
+
+/* Slideshow
+----------------------------------------------- */
+
+/* Dot Nav */
+
+#slideshow #dots {
+	clear: both;
+	display: none;
+	float: left;
+	height: 50px;
+	left: 50%;
+	position: relative;
+	text-align: right;
+	top: 420px;
+	width: 496px;
+	z-index: 1000;
+}
+
+#dots #dots-inner {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#dots .dot {
+	height: 24px;
+	padding: 0;
+	display: block;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+#dots .active {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+#dots .dot a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	background: transparent url(../images/home-slide-cta-arrow2.png) no-repeat 100% 3px;
+	padding-right: 14px;
+}
+#dots .active a {
+	background-position: 100% -28px;
+}
+#dots .dot a:focus {
+	outline: none;
+}
+#dots .dot a span.label {
+	font-size: 14px;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
+}
+/* Slides */
+#slideshow {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:450px;
+	min-width: 1000px;
+	color: #fff;
+	overflow: hidden;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+}
+#slide-bgs {
+	display: none;
+	position: absolute !important;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+}
+#slide-bgs img {
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+}
+#slideshow .slide {
+	position: absolute;
+	top:-80px;
+	left: 0;
+	z-index: 1;
+	display: none;
+	height:400px;
+	width: 100%;
+}
+#slideshow .slide .overlay {
+	position: relative;
+	top: 100px;
+	left: 50%;
+	display: none;
+	width: 490px;
+}
+#slideshow .slide a {
+	color: #000;
+	text-decoration: none;
+	outline: 0;
+	display: block;
+}
+#slideshow .slide a:focus {
+	outline: 0;
+}
+#slideshow .slide div.foreground {
+	position: absolute;
+	display: none;
+	left: 49%;
+	margin-left: -745px;
+	top: 00px;
+}
+#slideshow .slide span.lead {
+	font-size: 40px;
+	line-height: 50px;
+	font-weight: 300;
+}
+#slideshow .slide h1 {
+	font-weight: 300;
+	padding: 0;
+	position: relative;
+}
+#slideshow .slide h1.small {
+	font-size: 26px;
+	line-height: 40px;
+	margin: 0px;
+	padding: 0px 0 0 15px;
+	white-space: nowrap;
+	background:#fff;
+}
+#slideshow .slide h1.medium {
+	font-size: 51px;
+	line-height: 70px;
+	background:#fff;
+	color:#f60;
+	margin: 0px;
+	padding: 0px;
+}
+#slideshow .slide h1.large {
+	font-size: 100px;
+	line-height: 80px;
+	left: -7px;
+	margin: 0px;
+	padding: 0px
+}
+#slideshow .slide h1.large-next {
+	margin: 0 0 13px 0;
+}
+#slideshow .slide h1.medium-next {
+	margin: 0 0 13px 0;
+	color:#17a;
+}
+#slideshow .slide h1.small-next {
+	margin: 0 0 10px 0;
+}
+#slideshow .slide h1.medium-small-next {
+	margin: 0 0 12px 0;
+}
+#slideshow .slide h1.small-info-next {
+	margin: 0 0 21px 0;
+}
+#slideshow .slide h1.large-info-next {
+	margin: 0 0 24px 0;
+}
+#slideshow .slide h1.medium-info-next {
+	margin: 0 0 18px 0;
+	padding-left:10px;
+}
+#slideshow .slide .info {
+	display: block;
+	font-size: 18px;
+	font-weight: 300;
+
+	line-height: 26px;
+	color:#000;
+	background:#fff;
+	margin: 0 0 29px;
+	padding:8px;
+}
+#slideshow .slide span.btn {
+	border-radius: 6px;
+	display: inline-block;
+	font-size: 18px;
+	padding: 4px 24px 4px 10px;
+	color:#FFF;
+	height: 26px;
+	background-color: #1BACD3;
+	background-image: url(../images/home-slide-cta-arrow2.png);
+	background-repeat: no-repeat;
+	background-position: 100% 13px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+#slideshow .slide a:hover span.btn {
+	color: #000;
+	background-color: #fff;
+	background-image: url(../images/home-slide-cta-arrow2-hover.png);
+	cursor: pointer;
+}
