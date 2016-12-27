@@ -2,7 +2,7 @@
 
 // Animation vars
 var lightAnim = false;	// If animations should be minimal
-var animTimeout = 3000;
+var animTimeout = 2500;
 var startOverlay = '155px';
 var startFg = '30px';
 var endOverlay = '185px';
